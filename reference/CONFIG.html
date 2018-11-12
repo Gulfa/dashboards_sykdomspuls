@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Configuration of sykdomspuls — CONFIG • sykdomspuls</title>
+<title>Configuration of analyses — CONFIG • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -38,19 +38,10 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="Configuration of sykdomspuls — CONFIG" />
+<meta property="og:title" content="Configuration of analyses — CONFIG" />
 
-<meta property="og:description" content="This environment holds a number of important variables for the configuration of sykdomspuls
-VERSION. The version that we are currently running.
-VERSIONS. All available versions.
-SYNDROMES_DOCTOR. Syndromes for which we will only count consultations where a doctor was seen.
-SYNDROMES_ALL Syndromes for which we will count consultations where a doctor was seen and over the phone.
-SYNDROMES. A combined vector of SYNDROMES_DOCTOR and SYNDROMES_ALL.
-SYNDROMES_ALERT_INTERNAL. Syndromes for the internal FHI dashboard/alerts.
-SYNDROMES_ALERT_EXTERNAL. Syndromes for the external dashboard/alerts.
-SYNDROMES_SHORT. The short names of the syndromes.
-AGES. The age groups that we run analyses on.
-" />
+<meta property="og:description" content="This environment holds a number of important variables for
+configuring the analyses that will be run." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -142,24 +133,15 @@ AGES. The age groups that we run analyses on.
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Configuration of sykdomspuls</h1>
+    <h1>Configuration of analyses</h1>
     
     <div class="hidden name"><code>CONFIG.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>This environment holds a number of important variables for the configuration of sykdomspuls</p><ul>
-<li><p>VERSION. The version that we are currently running.</p></li>
-<li><p>VERSIONS. All available versions.</p></li>
-<li><p>SYNDROMES_DOCTOR. Syndromes for which we will only count consultations where a doctor was seen.</p></li>
-<li><p>SYNDROMES_ALL Syndromes for which we will count consultations where a doctor was seen and over the phone.</p></li>
-<li><p>SYNDROMES. A combined vector of SYNDROMES_DOCTOR and SYNDROMES_ALL.</p></li>
-<li><p>SYNDROMES_ALERT_INTERNAL. Syndromes for the internal FHI dashboard/alerts.</p></li>
-<li><p>SYNDROMES_ALERT_EXTERNAL. Syndromes for the external dashboard/alerts.</p></li>
-<li><p>SYNDROMES_SHORT. The short names of the syndromes.</p></li>
-<li><p>AGES. The age groups that we run analyses on.</p></li>
-</ul>
+    <p>This environment holds a number of important variables for
+configuring the analyses that will be run.</p>
     
     </div>
 
@@ -167,7 +149,17 @@ AGES. The age groups that we run analyses on.
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object of class <code>environment</code> of length 9.</p>
+    <p>An environment containing 9 variables:</p><dl class='dl-horizontal'>
+  <dt>VERSION</dt><dd><p>The version that we are currently running.</p></dd>
+  <dt>VERSIONS</dt><dd><p>All available versions.</p></dd>
+  <dt>SYNDROMES_DOCTOR</dt><dd><p>Syndromes for which we will only count consultations where a doctor was seen.</p></dd>
+  <dt>SYNDROMES_ALL</dt><dd><p>Syndromes for which we will count consultations where a doctor was seen and over the phone.</p></dd>
+  <dt>SYNDROMES</dt><dd><p>A combined vector of SYNDROMES_DOCTOR and SYNDROMES_ALL.</p></dd>
+  <dt>SYNDROMES_ALERT_INTERNAL</dt><dd><p>Syndromes for the internal FHI dashboard/alerts.</p></dd>
+  <dt>SYNDROMES_ALERT_EXTERNAL</dt><dd><p>Syndromes for the external dashboard/alerts.</p></dd>
+  <dt>SYNDROMES_SHORT</dt><dd><p>The short names of the syndromes.</p></dd>
+  <dt>AGES</dt><dd><p>The age groups that we run analyses on.</p></dd>
+</dl>
     
 
   </div>

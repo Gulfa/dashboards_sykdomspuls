@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VARS — VARS • sykdomspuls</title>
+<title>Global variables used for defining formats of data structures — VARS • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -38,9 +38,10 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="VARS — VARS" />
+<meta property="og:title" content="Global variables used for defining formats of data structures — VARS" />
 
-<meta property="og:description" content="VARS" />
+<meta property="og:description" content="This environment holds a number of variables that are used for
+defining the formats of data structures." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -132,14 +133,15 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>VARS</h1>
+    <h1>Global variables used for defining formats of data structures</h1>
     
     <div class="hidden name"><code>VARS.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>VARS</p>
+    <p>This environment holds a number of variables that are used for
+defining the formats of data structures.</p>
     
     </div>
 
@@ -147,7 +149,11 @@
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object of class <code>environment</code> of length 3.</p>
+    <p>An environment containing 3 variables:</p><dl class='dl-horizontal'>
+  <dt>REQ_DATA_RAW_STRUCTURAL</dt><dd><p>Required columns for raw data that are structural in nature (i.e. these form the skeleton).</p></dd>
+  <dt>REQ_DATA_RAW_OTHER</dt><dd><p>Required columns for raw data that are not structural in nature and are not listed in `CONFIG$SYNDROMES`.</p></dd>
+  <dt>REQ_DATA_RAW_ALL</dt><dd><p>The combination of `REQ_DATA_RAW_STRUCTURAL` and `REQ_DATA_RAW_OTHER`</p></dd>
+</dl>
     
 
   </div>
