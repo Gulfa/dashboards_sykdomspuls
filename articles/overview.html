@@ -105,17 +105,17 @@
 
     
     
-<div id="external-website" class="section level1">
-<h1 class="hasAnchor">
-<a href="#external-website" class="anchor"></a>External Website</h1>
+<div id="external-website" class="section level2">
+<h2 class="hasAnchor">
+<a href="#external-website" class="anchor"></a>External Website</h2>
 <p>The external website is comprised of two parts:</p>
 <ul>
 <li>A reactjs/D3js website hosted on Apache</li>
 <li>An API that supplies the website with the json data it needs</li>
 </ul>
-<div id="reactjsd3js-website" class="section level2">
-<h2 class="hasAnchor">
-<a href="#reactjsd3js-website" class="anchor"></a>Reactjs/D3js Website</h2>
+<div id="reactjsd3js-website" class="section level3">
+<h3 class="hasAnchor">
+<a href="#reactjsd3js-website" class="anchor"></a>Reactjs/D3js Website</h3>
 <p>The source code for the website is currently available here: <a href="https://github.com/raubreywhite/sykdomspuls_reactjs" class="uri">https://github.com/raubreywhite/sykdomspuls_reactjs</a></p>
 <p>This will be updated soon to:</p>
 <ol style="list-style-type: decimal">
@@ -125,16 +125,16 @@
 <li>Improve D3js code</li>
 </ol>
 </div>
-<div id="api" class="section level2">
-<h2 class="hasAnchor">
-<a href="#api" class="anchor"></a>API On External Webserver</h2>
+<div id="api" class="section level3">
+<h3 class="hasAnchor">
+<a href="#api" class="anchor"></a>API On External Webserver</h3>
 <p>The external website’s API is powered by <a href="https://www.rplumber.io">plumber</a>. Briefly, this is an R package that can convert R data into json and serve it through http requests.</p>
 <p>This is done through the <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/src/RunAPI.R">RunAPI.R</a> which is run by an R instance on the external webserver.</p>
 </div>
 </div>
-<div id="signal-processing-on-smhb" class="section level1">
-<h1 class="hasAnchor">
-<a href="#signal-processing-on-smhb" class="anchor"></a>Signal Processing On SMHB</h1>
+<div id="signal-processing-on-smhb" class="section level2">
+<h2 class="hasAnchor">
+<a href="#signal-processing-on-smhb" class="anchor"></a>Signal Processing On SMHB</h2>
 <p>This R package is triggered via <a href="https://folkehelseinstituttet.github.io/dashboards/umbrella.html#cron">cron</a>. The <a href="https://folkehelseinstituttet.github.io/dashboards/umbrella.html#cron">cronjob</a> calls <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/0_run.sh">0_run.sh</a> which is the enterance point for this package.</p>
 <p>When <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/0_run.sh">0_run.sh</a> is called, it firstly uses <code>flock</code> to determine if another instance of sykdomspuls is already running - if so, <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/0_run.sh">0_run.sh</a> exits. Otherwise, <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/src/RunProcess.R">RunProcess.R</a> is run, which:</p>
 <ul>
@@ -154,12 +154,7 @@
       <h2 class="hasAnchor">
 <a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-<li>
-<a href="#external-website">External Website</a><ul class="nav nav-pills nav-stacked">
-<li><a href="#reactjsd3js-website">Reactjs/D3js Website</a></li>
-      <li><a href="#api">API On External Webserver</a></li>
-      </ul>
-</li>
+<li><a href="#external-website">External Website</a></li>
       <li><a href="#signal-processing-on-smhb">Signal Processing On SMHB</a></li>
       </ul>
 </div>
