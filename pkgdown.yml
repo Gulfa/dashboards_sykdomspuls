@@ -3,6 +3,7 @@ pkgdown: 1.1.0
 pkgdown_sha: ~
 articles:
   inputdata: inputdata.html
+  overview: overview.html
   signals: signals.html
 urls:
   reference: https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference
