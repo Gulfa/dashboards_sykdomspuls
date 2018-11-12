@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DetermineStatus — DetermineStatus • sykdomspuls</title>
+<title>Convert n and thresholds to Normal/Medium/High — DetermineStatus • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -38,9 +38,11 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="DetermineStatus — DetermineStatus" />
+<meta property="og:title" content="Convert n and thresholds to Normal/Medium/High — DetermineStatus" />
 
-<meta property="og:description" content="DetermineStatus" />
+<meta property="og:description" content="Takes a data.table with the variables n, threshold2, and threshold4
+and then creates a new variable called status with the values
+Normal/Medium/High." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -132,14 +134,16 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>DetermineStatus</h1>
+    <h1>Convert n and thresholds to Normal/Medium/High</h1>
     
     <div class="hidden name"><code>DetermineStatus.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>DetermineStatus</p>
+    <p>Takes a data.table with the variables <code>n</code>, <code>threshold2</code>, and <code>threshold4</code>
+and then creates a new variable called <code>status</code> with the values
+Normal/Medium/High.</p>
     
     </div>
 
@@ -150,9 +154,15 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>data</th>
-      <td><p>d</p></td>
+      <td><p>A data.table containing the variables <code>n</code>, <code>threshold2</code>, and <code>threshold4</code></p></td>
     </tr>
     </table>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Normal &lt;= threshold2
+threshold2 &lt; Medium &lt;= threshold4
+threshold4 &lt; High</p>
     
 
   </div>
@@ -160,7 +170,9 @@
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-                </ul>
+      
+      <li><a href="#details">Details</a></li>
+          </ul>
 
   </div>
 </div>

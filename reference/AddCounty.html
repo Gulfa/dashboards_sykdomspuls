@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AddCounty — AddCounty • sykdomspuls</title>
+<title>Adds county to dataset — AddCounty • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -38,9 +38,12 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="AddCounty — AddCounty" />
+<meta property="og:title" content="Adds county to dataset — AddCounty" />
 
-<meta property="og:description" content="AddCounty" />
+<meta property="og:description" content="Takes a location (either a municipality or county).
+If the location is a county, nothing happens.
+If the location is a municipality, it searches for the encompassing county
+and adds this to the data.table data as a new variable county." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -132,14 +135,17 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>AddCounty</h1>
+    <h1>Adds county to dataset</h1>
     
     <div class="hidden name"><code>AddCounty.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>AddCounty</p>
+    <p>Takes a location (either a municipality or county).
+If the location is a county, nothing happens.
+If the location is a municipality, it searches for the encompassing county
+and adds this to the data.table <code>data</code> as a new variable <code>county</code>.</p>
     
     </div>
 
@@ -150,11 +156,11 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>data</th>
-      <td><p>d</p></td>
+      <td><p>A data.table</p></td>
     </tr>
     <tr>
       <th>loc</th>
-      <td><p>a</p></td>
+      <td><p>A location (either a municipality or county)</p></td>
     </tr>
     </table>
     

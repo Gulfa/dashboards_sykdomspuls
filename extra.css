@@ -38,9 +38,16 @@ p, dt {
 
 dt {
     font-weight: 400;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-right: 16px;
 
+}
+
+.dl-horizontal > dt{
+  width: 260px;
+}
+
+th{
+  padding-top: 16px;
 }
 
 .navbar-default, .navbar-link {

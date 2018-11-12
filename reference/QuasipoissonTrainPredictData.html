@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>test — QuasipoissonTrainPredictData • sykdomspuls</title>
+<title>Quasipoisson Core Algorithm — QuasipoissonTrainPredictData • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -38,9 +38,9 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="test — QuasipoissonTrainPredictData" />
+<meta property="og:title" content="Quasipoisson Core Algorithm — QuasipoissonTrainPredictData" />
 
-<meta property="og:description" content="test" />
+<meta property="og:description" content="This is the core algorithm of sykdomspulsen." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -132,14 +132,14 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>test</h1>
+    <h1>Quasipoisson Core Algorithm</h1>
     
     <div class="hidden name"><code>QuasipoissonTrainPredictData.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>test</p>
+    <p>This is the core algorithm of sykdomspulsen.</p>
     
     </div>
 
@@ -152,37 +152,44 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>datasetTrain</th>
-      <td><p>a</p></td>
+      <td><p>Training data.table</p></td>
     </tr>
     <tr>
       <th>datasetPredict</th>
-      <td><p>a</p></td>
+      <td><p>Prediction data.table</p></td>
     </tr>
     <tr>
       <th>reweights</th>
-      <td><p>a</p></td>
+      <td><p>Number (greater or equal to 0) of residual reweights adjusting for previous outbreaks (default: 1; 1 reweight)</p></td>
     </tr>
     <tr>
       <th>remove.pandemic.year</th>
-      <td><p>a</p></td>
+      <td><p>true/false (default: false; keep 2009 data)</p></td>
     </tr>
     <tr>
       <th>remove.highcounts</th>
-      <td><p>a</p></td>
+      <td><p>Number between 0 and 1 of fraction of high counts to be removed from prediction, to remove impact of earlier outbreaks (default: 0)</p></td>
     </tr>
     <tr>
       <th>sign.level</th>
-      <td><p>a</p></td>
+      <td><p>Significance level for the prediction intervals (default: 0.05)</p></td>
     </tr>
     <tr>
       <th>isDaily</th>
-      <td><p>a</p></td>
+      <td><p>Is it daily data or weekly data?</p></td>
     </tr>
     <tr>
       <th>v</th>
-      <td><p>a</p></td>
+      <td><p>Version (Not in use)</p></td>
     </tr>
     </table>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Description: Applys a surveillance algorithm based on a quasi-poisson regression
+model to the selected data. The difference from the Farrington algorithm is in how
+seasonality is accounted for (here it is adjusted for, in Farrington it is removed
+by design.</p>
     
 
   </div>
@@ -190,7 +197,9 @@
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-                </ul>
+      
+      <li><a href="#details">Details</a></li>
+          </ul>
 
   </div>
 </div>

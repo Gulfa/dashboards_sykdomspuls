@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RunOneAnalysis — RunOneAnalysis • sykdomspuls</title>
+<title>Run one analysis according to the analysis stack — RunOneAnalysis • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -38,9 +38,11 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="RunOneAnalysis — RunOneAnalysis" />
+<meta property="og:title" content="Run one analysis according to the analysis stack — RunOneAnalysis" />
 
-<meta property="og:description" content="RunOneAnalysis" />
+<meta property="og:description" content="This function receives a generic dataset and a selection from the analysis stack.
+The data is then reformatted according to the analysis stack and sent to the
+appropriate analysis function." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -132,14 +134,16 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>RunOneAnalysis</h1>
+    <h1>Run one analysis according to the analysis stack</h1>
     
     <div class="hidden name"><code>RunOneAnalysis.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>RunOneAnalysis</p>
+    <p>This function receives a generic dataset and a selection from the analysis stack.
+The data is then reformatted according to the analysis stack and sent to the
+appropriate analysis function.</p>
     
     </div>
 
@@ -150,11 +154,11 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>analysesStack</th>
-      <td><p>a</p></td>
+      <td><p>The desired analysis. TODO: Validate</p></td>
     </tr>
     <tr>
       <th>analysisData</th>
-      <td><p>a</p></td>
+      <td><p>The generic dataset. TODO: Validate</p></td>
     </tr>
     </table>
     
