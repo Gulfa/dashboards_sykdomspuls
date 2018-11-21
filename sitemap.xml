@@ -13,16 +13,16 @@
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/AddXToWeekly.html</loc>
   </url>
   <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/AnalyseRecentLine.html</loc>
-  </url>
-  <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/AnalyseYearLine.html</loc>
-  </url>
-  <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/CONFIG.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/CalculateTrainPredictYearPattern.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/CleanData.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/ConvertConfigForAPI.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/CreateLatestDoneFile.html</loc>
@@ -67,10 +67,16 @@
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/FarringtonZscore.html</loc>
   </url>
   <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/FormatData.html</loc>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenFakeDataAnalysis.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenFakeDataClean.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenFakeDataRaw.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenFakeResultsFull.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenNorwayLocations.html</loc>
@@ -79,16 +85,13 @@
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenNorwayMunicipMerging.html</loc>
   </url>
   <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenerateAnalysisResults.html</loc>
-  </url>
-  <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenerateOutbreakListExternal.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GenerateOutbreakListInternal.html</loc>
   </url>
   <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GetAgesLU.html</loc>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GetAlertsEmails.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/GetCountyFromMunicip.html</loc>
@@ -112,13 +115,37 @@
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/LatestRawID.html</loc>
   </url>
   <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/PB.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/PBIncrement.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/PBInitialize.html</loc>
+  </url>
+  <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/QuasipoissonTrainPredictData.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/ResultsAggregateApply.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/ResultsAggregateStack.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/RunOneAnalysis.html</loc>
   </url>
   <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/SaveData.html</loc>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/RunShiny.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/SaveRDS.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/StackAndEfficientDataForAnalysis.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/StackIterator.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/UpdateData.html</loc>
@@ -127,10 +154,13 @@
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/VARS.html</loc>
   </url>
   <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/ValidateAnalysisResults.html</loc>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/ValidateDataClean.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/ValidateDataRaw.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/ValidateResultsFull.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/displayDays.html</loc>
@@ -140,24 +170,6 @@
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/norwayMunicipMerging.html</loc>
-  </url>
-  <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/variablesAlgorithmBasic.html</loc>
-  </url>
-  <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/variablesAlgorithmDaily.html</loc>
-  </url>
-  <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/variablesAlgorithmProduced.html</loc>
-  </url>
-  <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/variablesAlgorithmWeekly.html</loc>
-  </url>
-  <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/variablesMunicip.html</loc>
-  </url>
-  <url>
-    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/variablesPostProcessing.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//articles/inputdata.html</loc>

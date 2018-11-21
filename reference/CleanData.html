@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>List of municipality merging over time — norwayMunicipMerging • sykdomspuls</title>
+<title>Format the raw data — CleanData • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -37,9 +37,9 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="List of municipality merging over time — norwayMunicipMerging" />
+<meta property="og:title" content="Format the raw data — CleanData" />
 
-<meta property="og:description" content="List of municipality merging over time" />
+<meta property="og:description" content="Format the raw data" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -133,31 +133,59 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>List of municipality merging over time</h1>
+    <h1>Format the raw data</h1>
     
-    <div class="hidden name"><code>norwayMunicipMerging.Rd</code></div>
+    <div class="hidden name"><code>CleanData.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>List of municipality merging over time</p>
+    <p>Format the raw data</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>norwayMunicipMerging</span></pre>
-        
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
-
-    <p>An object of class <code>data.table</code> (inherits from <code>data.frame</code>) with 5571 rows and 9 columns.</p>
+    <pre class="usage"><span class='fu'>CleanData</span>(<span class='no'>d</span>, <span class='no'>syndrome</span>, <span class='kw'>population</span> <span class='kw'>=</span> <span class='fu'><a href='GetPopulation.html'>GetPopulation</a></span>(),
+  <span class='kw'>hellidager</span> <span class='kw'>=</span> <span class='fu'>fread</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.file'>system.file</a></span>(<span class='st'>"extdata"</span>, <span class='st'>"DatoerMedHelligdager.txt"</span>,
+  <span class='kw'>package</span> <span class='kw'>=</span> <span class='st'>"sykdomspuls"</span>))[, <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"Dato"</span>, <span class='st'>"HelligdagIndikator"</span>), <span class='kw'>with</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>],
+  <span class='kw'>testIfHelligdagIndikatorFileIsOutdated</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
+  <span class='kw'>removeMunicipsWithoutConsults</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>d</th>
+      <td><p>Raw data</p></td>
+    </tr>
+    <tr>
+      <th>syndrome</th>
+      <td><p>syndrome of interest</p></td>
+    </tr>
+    <tr>
+      <th>population</th>
+      <td><p>Population dataset</p></td>
+    </tr>
+    <tr>
+      <th>hellidager</th>
+      <td><p>Hellidager dataset</p></td>
+    </tr>
+    <tr>
+      <th>testIfHelligdagIndikatorFileIsOutdated</th>
+      <td><p>Boolean. Test if the current date is older than the last hellidag recorded in the fiel?</p></td>
+    </tr>
+    <tr>
+      <th>removeMunicipsWithoutConsults</th>
+      <td><p>Boolean. Remove municipalities that do not have any consultations?</p></td>
+    </tr>
+    </table>
     
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-          </ul>
+      <li><a href="#arguments">Arguments</a></li>
+                </ul>
 
   </div>
 </div>
