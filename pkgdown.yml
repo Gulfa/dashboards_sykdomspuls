@@ -5,6 +5,7 @@ articles:
   inputdata: inputdata.html
   overview: overview.html
   signals: signals.html
+  sykdomspulsonwindows: sykdomspulsonwindows.html
 urls:
   reference: https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference
   article: https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//articles

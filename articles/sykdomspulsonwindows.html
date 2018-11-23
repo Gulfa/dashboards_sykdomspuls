@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signals • sykdomspuls</title>
+<title>Sykdomspuls on Windows • sykdomspuls</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><!-- docsearch --><script src="../docsearch.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="Signals">
+<meta property="og:title" content="Sykdomspuls on Windows">
 <meta property="og:description" content="">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -97,71 +97,31 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Signals</h1>
+      <h1>Sykdomspuls on Windows</h1>
                         <h4 class="author">Richard White</h4>
             
-            <h4 class="date">2018-10-12</h4>
+            <h4 class="date">2018-11-23</h4>
       
       
-      <div class="hidden name"><code>overview.Rmd</code></div>
+      <div class="hidden name"><code>sykdomspulsonwindows.Rmd</code></div>
 
     </div>
 
     
     
-<div id="external-website" class="section level2">
-<h2 class="hasAnchor">
-<a href="#external-website" class="anchor"></a>External Website</h2>
-<p>The external website is comprised of two parts:</p>
-<ul>
-<li>A reactjs/D3js website hosted on Apache</li>
-<li>An API that supplies the website with the json data it needs</li>
-</ul>
-<div id="reactjsd3js-website" class="section level3">
-<h3 class="hasAnchor">
-<a href="#reactjsd3js-website" class="anchor"></a>Reactjs/D3js Website</h3>
-<p>The source code for the website is currently available here: <a href="https://github.com/raubreywhite/sykdomspuls_reactjs" class="uri">https://github.com/raubreywhite/sykdomspuls_reactjs</a></p>
-<p>This will be updated soon to:</p>
-<ol style="list-style-type: decimal">
-<li>Transfer ownership to <a href="https://github.com/folkehelseinstituttet" class="uri">https://github.com/folkehelseinstituttet</a>
-</li>
-<li>Use <a href="http://parceljs.org" class="uri">http://parceljs.org</a> as a bundling tool instead of webpack</li>
-<li>Improve D3js code</li>
-</ol>
-</div>
-<div id="api" class="section level3">
-<h3 class="hasAnchor">
-<a href="#api" class="anchor"></a>API On External Webserver</h3>
-<p>The external website’s API is powered by <a href="https://www.rplumber.io">plumber</a>. Briefly, this is an R package that can convert R data into json and serve it through http requests.</p>
-<p>This is done through the <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/src/RunAPI.R">RunAPI.R</a> which is run by an R instance on the external webserver.</p>
-</div>
-</div>
-<div id="signal-processing-on-smhb" class="section level2">
-<h2 class="hasAnchor">
-<a href="#signal-processing-on-smhb" class="anchor"></a>Signal Processing On SMHB</h2>
-<p>This R package is triggered via <a href="https://folkehelseinstituttet.github.io/dashboards/umbrella.html#cron">cron</a>. The <a href="https://folkehelseinstituttet.github.io/dashboards/umbrella.html#cron">cronjob</a> calls <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/0_run.sh">0_run.sh</a> which is the enterance point for this package.</p>
-<p>When <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/0_run.sh">0_run.sh</a> is called, it firstly uses <code>flock</code> to determine if another instance of sykdomspuls is already running - if so, <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/0_run.sh">0_run.sh</a> exits. Otherwise, <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/src/RunProcess.R">RunProcess.R</a> is run, which:</p>
-<ul>
-<li>Checks for unprocessed data</li>
-<li>If there is no unprocessed data, then quits with <code>status=21</code>
-</li>
-<li>Processes all unprocessed data</li>
-<li>If successful, quits with <code>status=0</code>
-</li>
-</ul>
-<p><a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/0_run.sh">0_run.sh</a> then checks the exit code of <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/src/RunProcess.R">RunProcess.R</a>. If it is 0 and the computer name is <a href="https://folkehelseinstituttet.github.io/dashboards/umbrella.html#requirements---smhb">smhb</a> (i.e. production computer) then all data in <code>/data_app/sykdomspuls/*.RDS</code> is uploaded to the folder <code>/data/</code> on <code>sykdomspulsen.fhi.no</code> (i.e. uploading results to the external webserver). The file <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/bin/1_delete_website_token.sh">1_delete_website_token.sh</a> is then run, which deletes the file <code>/data/.deleteThisToRestartR</code> on <code>sykdomspulsen.fhi.no</code>, which triggers a script on the external webserver to restart R on the external webserver. After R is restarted, <a href="https://github.com/folkehelseinstituttet/dashboards_sykdomspuls/blob/master/inst/src/RunAPI.R">RunAPI.R</a> is automatically run, loading in the new data for the <a href="#api">API</a>.</p>
-</div>
+<p>To install the <code>sykdomspuls</code> package you first need to edit your <code>.Rprofile</code> file. This can be done with the command <code><a href="https://www.rdocumentation.org/packages/usethis/topics/edit">usethis::edit_r_profile()</a></code>.</p>
+<p>You will then add the following lines to your <code>.Rprofile</code>:</p>
+<pre><code><a href="https://www.rdocumentation.org/packages/base/topics/options">options(repos=structure(c(
+  CRAN="https://cran.rstudio.com",
+  FHI="https://folkehelseinstituttet.github.io/drat/",
+  RAW="https://raubreywhite.github.io/drat/"
+)))</a></code></pre>
+<p>Save this file and restart R/RStudio.</p>
+<p>You can then install <code>sykdomspuls</code>:</p>
+<pre><code><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages("sykdomspuls", type = "source")</a></code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li><a href="#external-website">External Website</a></li>
-      <li><a href="#signal-processing-on-smhb">Signal Processing On SMHB</a></li>
-      </ul>
-</div>
       </div>
 
 </div>

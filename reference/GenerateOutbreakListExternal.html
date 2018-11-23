@@ -90,10 +90,13 @@
       <a href="../articles/overview.html">Overview</a>
     </li>
     <li>
-      <a href="../articles/inputdata.html">Input data</a>
+      <a href="../articles/inputdata.html">Input Data</a>
     </li>
     <li>
       <a href="../articles/signals.html">Signals</a>
+    </li>
+    <li>
+      <a href="../articles/sykdomspulsonwindows.html">Sykdomsplus on Windows</a>
     </li>
   </ul>
 </li>
@@ -145,9 +148,12 @@
     </div>
 
     <pre class="usage"><span class='fu'>GenerateOutbreakListExternal</span>(<span class='kw'>df</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/readRDS'>readRDS</a></span>(<span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
-  <span class='st'>"resYearLine.RDS"</span>)), <span class='kw'>dk</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/readRDS'>readRDS</a></span>(<span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
-  <span class='st'>"resYearLineMunicip.RDS"</span>)), <span class='kw'>saveFiles</span> <span class='kw'>=</span> <span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
-  <span class='st'>"outbreaks_alert_external.RDS"</span>), <span class='kw'>alerts</span> <span class='kw'>=</span> <span class='fu'><a href='GetAlertsEmails.html'>GetAlertsEmails</a></span>())</pre>
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sprintf'>sprintf</a></span>(<span class='st'>"%s/resYearLine.RDS"</span>, <span class='fu'><a href='LatestRawID.html'>LatestRawID</a></span>()))),
+  <span class='kw'>dk</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/readRDS'>readRDS</a></span>(<span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sprintf'>sprintf</a></span>(<span class='st'>"%s/resYearLineMunicip.RDS"</span>, <span class='fu'><a href='LatestRawID.html'>LatestRawID</a></span>()))),
+  <span class='kw'>saveFiles</span> <span class='kw'>=</span> <span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sprintf'>sprintf</a></span>(<span class='st'>"%s/outbreaks_alert_external.RDS"</span>, <span class='fu'><a href='LatestRawID.html'>LatestRawID</a></span>())),
+  <span class='kw'>alerts</span> <span class='kw'>=</span> <span class='fu'><a href='GetAlertsEmails.html'>GetAlertsEmails</a></span>())</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
