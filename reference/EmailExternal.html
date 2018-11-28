@@ -70,7 +70,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">sykdomspuls</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2018.11.23</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2018.11.28</span>
       </span>
     </div>
 
@@ -148,8 +148,9 @@
     </div>
 
     <pre class="usage"><span class='fu'>EmailExternal</span>(<span class='kw'>results</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/readRDS'>readRDS</a></span>(<span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
-  <span class='st'>"outbreaks_alert_external.RDS"</span>)), <span class='kw'>alerts</span> <span class='kw'>=</span> <span class='fu'><a href='GetAlertsEmails.html'>GetAlertsEmails</a></span>(),
-  <span class='kw'>forceNoOutbreak</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>forceYesOutbreak</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sprintf'>sprintf</a></span>(<span class='st'>"%s/outbreaks_alert_external.RDS"</span>, <span class='fu'><a href='LatestRawID.html'>LatestRawID</a></span>()))),
+  <span class='kw'>alerts</span> <span class='kw'>=</span> <span class='fu'><a href='GetAlertsEmails.html'>GetAlertsEmails</a></span>(), <span class='kw'>forceNoOutbreak</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>forceYesOutbreak</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
