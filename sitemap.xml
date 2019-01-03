@@ -7,6 +7,9 @@
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/AddCounty.html</loc>
   </url>
   <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/AddLocationName.html</loc>
+  </url>
+  <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/AddWkyrAndDisplayDateToWeekly.html</loc>
   </url>
   <url>
@@ -17,6 +20,9 @@
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/CalculateTrainPredictYearPattern.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/CheckOutOfDate.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/CleanData.html</loc>
@@ -116,6 +122,9 @@
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/LatestRawID.html</loc>
+  </url>
+  <url>
+    <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/NorwayLocationsLong.html</loc>
   </url>
   <url>
     <loc>https://folkehelseinstituttet.github.io/dashboards_sykdomspuls//reference/PB.html</loc>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NorwayLocations — NorwayLocations • sykdomspuls</title>
+<title>Adds LocationName to dataset — AddLocationName • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -38,9 +38,11 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="NorwayLocations — NorwayLocations" />
+<meta property="og:title" content="Adds LocationName to dataset — AddLocationName" />
 
-<meta property="og:description" content="NorwayLocations" />
+<meta property="og:description" content="Takes a location (either a municipality or county).
+Finds the pretty name and adds this to the data.table data
+ as a new variable locationName." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -137,24 +139,36 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>NorwayLocations</h1>
+    <h1>Adds LocationName to dataset</h1>
     
-    <div class="hidden name"><code>norwayLocations.Rd</code></div>
+    <div class="hidden name"><code>AddLocationName.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>NorwayLocations</p>
+    <p>Takes a location (either a municipality or county).
+Finds the pretty name and adds this to the data.table <code>data</code>
+ as a new variable <code>locationName</code>.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>NorwayLocations</span>()</pre>
-        
+    <pre class="usage"><span class='fu'>AddLocationName</span>(<span class='no'>data</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>data</th>
+      <td><p>A data.table</p></td>
+    </tr>
+    </table>
+    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
                 </ul>
 
   </div>
