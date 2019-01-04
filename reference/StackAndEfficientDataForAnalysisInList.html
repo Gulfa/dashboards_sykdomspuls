@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Create analysis stack and datasets for a tag — StackAndEfficientDataForAnalysis • sykdomspuls</title>
+<title>Create analysis stack and datasets for a tag inside a list — StackAndEfficientDataForAnalysisInList • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -38,12 +38,12 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="Create analysis stack and datasets for a tag — StackAndEfficientDataForAnalysis" />
+<meta property="og:title" content="Create analysis stack and datasets for a tag inside a list — StackAndEfficientDataForAnalysisInList" />
 
 <meta property="og:description" content="Given one row from CONFIG$SYNDROMES we need
 to generate an analysis stack and all relevant datasets
 that can be directly sent to QuasipoissonTrainPredictData
-without additional formatting." />
+without additional formatting into a list for use in pbmcapply" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -140,9 +140,9 @@ without additional formatting." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Create analysis stack and datasets for a tag</h1>
+    <h1>Create analysis stack and datasets for a tag inside a list</h1>
     
-    <div class="hidden name"><code>StackAndEfficientDataForAnalysis.Rd</code></div>
+    <div class="hidden name"><code>StackAndEfficientDataForAnalysisInList.Rd</code></div>
     </div>
 
     <div class="ref-description">
@@ -150,11 +150,11 @@ without additional formatting." />
     <p>Given one row from <code>CONFIG$SYNDROMES</code> we need
 to generate an analysis stack and all relevant datasets
 that can be directly sent to <code>QuasipoissonTrainPredictData</code>
-without additional formatting.</p>
+without additional formatting into a list for use in <code>pbmcapply</code></p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>StackAndEfficientDataForAnalysis</span>(<span class='no'>conf</span>)</pre>
+    <pre class="usage"><span class='fu'>StackAndEfficientDataForAnalysisInList</span>(<span class='no'>conf</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
