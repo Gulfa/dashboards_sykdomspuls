@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NorwayMunicipMerging — NorwayMunicipMerging • sykdomspuls</title>
+<title>AnalyseStats1 — AnalyseStats1 • sykdomspuls</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -38,9 +38,9 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="NorwayMunicipMerging — NorwayMunicipMerging" />
+<meta property="og:title" content="AnalyseStats1 — AnalyseStats1" />
 
-<meta property="og:description" content="NorwayMunicipMerging" />
+<meta property="og:description" content="AnalyseStats1" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -71,7 +71,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">sykdomspuls</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2019.2.20</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2019.3.6</span>
       </span>
     </div>
 
@@ -137,24 +137,41 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>NorwayMunicipMerging</h1>
+    <h1>AnalyseStats1</h1>
     
-    <div class="hidden name"><code>norwayMunicipMerging.Rd</code></div>
+    <div class="hidden name"><code>AnalyseStats1.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>NorwayMunicipMerging</p>
+    <p>AnalyseStats1</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>NorwayMunicipMerging</span>()</pre>
-        
+    <pre class="usage"><span class='fu'>AnalyseStats1</span>(<span class='kw'>resYearLine</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/readRDS'>readRDS</a></span>(<span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sprintf'>sprintf</a></span>(<span class='st'>"%s/resYearLine.RDS"</span>, <span class='fu'><a href='LatestRawID.html'>LatestRawID</a></span>()))),
+  <span class='kw'>resYearLineMunicip</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/readRDS'>readRDS</a></span>(<span class='kw pkg'>fhi</span><span class='kw ns'>::</span><span class='fu'><a href='https://folkehelseinstituttet.github.io/fhi//reference/DashboardFolder.html'>DashboardFolder</a></span>(<span class='st'>"results"</span>,
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sprintf'>sprintf</a></span>(<span class='st'>"%s/resYearLineMunicip.RDS"</span>, <span class='fu'><a href='LatestRawID.html'>LatestRawID</a></span>()))))</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>resYearLine</th>
+      <td><p>a</p></td>
+    </tr>
+    <tr>
+      <th>resYearLineMunicip</th>
+      <td><p>a</p></td>
+    </tr>
+    </table>
+    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
                 </ul>
 
   </div>
